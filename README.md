@@ -1,7 +1,10 @@
 # Real-Time-Face-Recognition
-Real Time Face Recognition project for detecting the faces and displaying the names of the faces based on the data already fed.
+Real Time Face Recognition project for detecting multiple faces and displaying the names of the faces based on the data already fed.
 A real time face recognition system is capable of identifying or verifying a person from a video frame. To recognize the face in a frame,
 first we need to detect whether the face is present in the frame.
+
+
+![image](https://user-images.githubusercontent.com/76276520/115451578-fe1c4300-a23a-11eb-89df-657b56579857.png)
 
 
 In OpenCV, we have several trained  Haar Cascade models which are saved as XML files. Instead of creating and training the model from scratch,
