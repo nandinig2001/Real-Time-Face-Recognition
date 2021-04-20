@@ -4,17 +4,23 @@ import cv2
 
 video_capture = cv2.VideoCapture(0)
 
-nandini_image = fr.load_image_file("photos\nandini.jpeg")
-nandini_face_encoding = fr.face_encodings(nandini_image)[0]
+anne_image = fr.load_image_file("photos/annehathway.jpg")
+anne_face_encoding = fr.face_encodings(anne_image)[0]
 
-known_face_encondings = [nandini_face_encoding]
-known_face_names = ["Nandini"]
+cole_image = fr.load_image_file("photos/colesprouse.jpg")
+cole_face_encoding = fr.face_encodings(cole_image)[0]
 
-noopur_image = fr.load_image_file("photos\noopur.jpeg")
-noopur_face_encoding = fr.face_encodings(noopur_image)[0]
+known_face_encondings = [
+    cole_face_encoding,
+    anne_face_encoding
+]
 
-known_face_encondings = [noopur_face_encoding]
-known_face_names = ["Noopur"]
+known_face_names = [
+    "cole",
+    "anne"
+]
+
+
 
 while True: 
     ret, frame = video_capture.read()
